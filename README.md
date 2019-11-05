@@ -7,5 +7,4 @@ BLM305
 
 [CW2.1](https://ecenuryildiz.github.io/JS/D%C3%B6n%C3%BC%C5%9F%C3%BCm.html)
 
-[CW3](https://ecenuryildiz.github.io/JS/c4_inspector.html)
-
+[CW3](https://ecenuryildiz.github.io/JS/JS/blob/master/c4_inspector.html)
