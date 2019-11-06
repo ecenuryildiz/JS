@@ -13,3 +13,5 @@ BLM305
 
 [CW5](https://ecenuryildiz.github.io/JS/cw5/EloquentJS.html)
 
+[HW1](https://ecenuryildiz.github.io/JS/Poisson%20Table.html)
+
