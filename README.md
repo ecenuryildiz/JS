@@ -11,4 +11,5 @@ BLM305
 
 [CW4](https://ecenuryildiz.github.io/JS/courses.html)
 
+[CW5](https://ecenuryildiz.github.io/JS/cw5/EloquentJS.html)
 
