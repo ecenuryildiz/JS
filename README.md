@@ -10,3 +10,5 @@ BLM305
 [CW3](https://ecenuryildiz.github.io/JS/c4_inspector.html)
 
 [CW4](https://ecenuryildiz.github.io/JS/courses.html)
+
+[CW5](https://github.com/ecenuryildiz/JS/blob/master/cw5/EloquentJS.html)
