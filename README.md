@@ -15,3 +15,6 @@ BLM305
 
 [HW1](https://ecenuryildiz.github.io/JS/Poisson%20Table.html)
 
+[CW6](https://ecenuryildiz.github.io/JS/read.html)
+
+
