@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width">
-    <link rel="icon" href="../images/icon192.png">
     <title>Courses Database </title>
 
   <style>
@@ -36,7 +35,7 @@
 
 
 <p>Course code: 
-<input type = text onChange="courseIn(value)" placeholder="course code:">
+<input type = text onChange="coursesIn(value)" placeholder="course code:">
 </p>
 <p id=out onclick='doClick(event)'></p>
 
@@ -124,7 +123,7 @@ function coursesIn(code) {
     code = code.toUpperCase();
     let a = 0;
     for (let crs of vals){ 
-        if (crs.code = code){
+        if (crs.code == code){
             a=1;
 	report(crs.date);
 	report(crs.time);
