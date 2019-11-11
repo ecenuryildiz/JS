@@ -1,5 +1,5 @@
 # JS
-BLM305
+Classworks
 
 [CW1](https://ecenuryildiz.github.io/JS/Pie%20Chart.html)
 
@@ -12,8 +12,6 @@ BLM305
 [CW4](https://ecenuryildiz.github.io/JS/courses.html)
 
 [CW5](https://ecenuryildiz.github.io/JS/cw5/EloquentJS.html)
-
-[HW1](https://ecenuryildiz.github.io/JS/Poisson%20Table.html)
 
 [CW6](https://ecenuryildiz.github.io/JS/read.html)
 
