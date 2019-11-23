@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!-- saved from url=(0041)https://maeyler.github.io/305/work/Timing -->
+<html><head>
+
+
+</head>
+
+<body>
+
+<h3>CW7--Timing</h3>
+<button onclick="calculate()">calculate</button>
+<script src ="Database.js"></script>
+<p id="out1"></p>
+<p id="out2"></p>
+
+<script>
+"use strict";
+// Make a large Set
+const url = "https://maeyler.github.io/JS/data/Students.txt"
+const array = []     // Student objects
+const map = new Map() // distinct names
+function readData() {
+    fetch(url)
+    .then(res => res.text())
+    .then(addStudents)  
+}
+function parseStudent(line) {
+	let [id, name, gpa, ...L] = line.split('\t')
+            let std = new Student(id, name, gpa)
+            std.courses = L; return std
+}
+function addStudents(txt) {
+    let msg = "<br>Data contains "
+                + txt.length + " chars, "
+            let a = txt.split('\n')
+            msg += a.length + " lines <br>"
+            for (let s of a) {
+                let std = parseStudent(s)
+                array.push(std.id);
+                map.set(std.id, std)
+            }
+}
+function calculate() {
+	let arrayCount = 0;
+	let mapCount = 0;
+        let time =0;
+	let time2 =0;
+	
+	
+	for(let i = 0; i < 10000; i++) {
+           let id = 215170000 + Math.floor((Math.random() * 999))
+	
+	 let arrayTime = performance.now();
+	 if(array.includes(id+"")) {
+		arrayCount++;
+	  }
+ 	  time += performance.now() - arrayTime;
+	 
+	  let mapTime = performance.now();
+	  if(map.has(id+"")) { 
+		mapCount++;
+	  }
+	   time2 += performance.now() - mapTime;
+
+	}
+        let a = "Array Counter : " + arrayCount + "<br> Map Counter : " + mapCount;
+        let b = "Timing Array : " + time + " msec " + "<br>  Timing Map : " + time2 +  		" msec";
+            out1.innerHTML = a;
+	    out2.innerHTML = b;
+	
+}
+
+readData();	
+
+
+
+</script>
+
+
+
+</body></html>
