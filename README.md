@@ -15,4 +15,4 @@ Classworks
 
 [CW6](https://ecenuryildiz.github.io/JS/read.html)
 
-
+[CW7](https://ecenuryildiz.github.io/JS/cw7/CW7--Timing.html)
