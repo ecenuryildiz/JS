@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<!-- saved from url=(0052)https://maeyler.github.io/JS/hard/Table%20maker.html -->
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width">
+    <link rel="icon" sizes="192x192" href="https://maeyler.github.io/JS/images/JS.png">
+    <title>Make a Table </title>
+
+  <style>
+    body { max-width: 440px; }
+    #sample { overflow-x: auto; }
+    table { border-collapse: collapse; }
+    th { color: blue; padding: 5px 5px; }
+    td { 
+        border: 1px solid blue; 
+        padding: 5px 5px; 
+        text-align: center; 
+        position: relative;
+    }
+    td:hover .tip {
+        visibility: visible;
+    }
+    td .tip {
+        visibility: hidden;
+        font-size: small;
+        background-color: blue;
+        color: white;
+        text-align: center;
+        padding: 5px 5px;
+        position: absolute;
+        left: 5px; 
+        top: 20px;
+    }
+  </style>
+</head>
+<center>
+<h2 id="title">Make a Table</h2>
+<table id=tablo></table>
+<body>
+
+<script>
+"use strict";
+//June 8, 2018 MAE -- basis for 
+//https://maeyler.github.io/Visual-Mujam/
+//
+function readData ()
+     {
+	    let txtArray=[]  
+        let url = "https://ecenuryildiz.github.io/JS/text.txt"
+        fetch(url)
+        .then(res => res.text())
+        .then(res => {
+	      let a = res.split("\n");
+	      
+	     let col = "<th></th>";
+		
+		 let text = "<tr>"+col+"</tr>";
+		  for (let line of a)
+	        {
+	          let b = line.split("\t");
+	          let name = b[0], diam = b[1], mass = b[2], radius = b[3], period = b[4];
+	          txtArray.push([name,diam,mass,radius, period])
+			}
+			
+			let txt=""
+			
+			/*for (let i = 1; i <= 1; i++) 
+		       row = "<th>"+"ss"+"</th>";*/
+		       
+		      for(let j =0; j<9; j++){
+			      //row = "<td>"+txt[j]+"</td>";
+			  
+		          txt = txtArray[j];
+			  col = "<td>"+txt[0]+"</td>";
+		          col += "<td>"+txt[4]+"</td>";
+		          col += "<td>"+txt[2]+"</td>";
+		          col += "<td>"+txt[3]+"</td>";
+			  col += "<td>"+txt[4]+"</td>";
+				text += "<tr>"+col+"</tr>"; 
+				
+				tablo.innerHTML = text;
+		      }   
+		        
+		         
+		    });	
+	 }
+
+	readData();
+
+/*Name	Diam	Mass	Radius	Period
+Mercury	0.382	0.06	0.40	0.24
+Venus	0.949	0.82	0.72	0.62
+Earth	1.000	1.00	1.00	1.00
+Mars	0.532	0.11	1.52	1.88
+Jupiter	11.209	317.80	5.20	11.86
+Saturn	9.449	95.20	9.54	29.46
+Uranus	4.007	14.60	19.22	84.01
+Neptune	3.883	17.20	30.06	164.80*/
+</script>
+
+
+ 
+</body></html>
