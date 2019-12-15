@@ -1,0 +1,16 @@
+{
+  "name": "Advanced Programming",
+  "description": "Advanced Programming Applications",
+  "short_name": "AdvProg",
+  "start_url": "JS/index.html",
+  "display": "standalone",
+  "background_color": "white",
+  "theme_color": "#457cdb",
+  "icons": [
+    {
+      "src": "js.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}

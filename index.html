@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="author" content="Ecenur Yildiz" />
+    <meta name="Description" content="HTML,CSS,JavaScript">
+    <meta name="theme-color" content="white">
+    <link rel="icon" sizes="192x192" href="JS.png">
+    <link rel="manifest" href="manifest.json"> 
+    <title>EcenurYildiz JS</title>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker
+        .register(' sw.js')
+        .then((reg) => { console.log('SW starts', reg.active) })
+        .catch(console.log)
+    }
+  </script>
+</head>
+
+<style>
+    .links {
+        margin-bottom: 0px;
+        padding-bottom: 0px;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+   
+    .links ul li {
+        padding: 5px 0;
+    }
+    .links ul li a {
+        color: #FF00FF;
+        font-weight: bold;
+     }   
+   .links ul li a:hover {
+        color:#11009b;
+    }
+</style>
+
+<body>
+<h2 style="color: black;text-align: center" id="advanced-programming">Advanced Programming Techniques</h2>
+	
+	 <hr>
+	<div class="links">
+	<h3>My Github Repo</h3>
+        <ul>
+            <li><a href="https://github.com/eceuryildiz/JS">repo</a></li>
+        </ul>
+ <hr>
+        <h3>Classworks</h3>
+        
+        <ul>
+            <li><a href="https://ecenuryildiz.github.io/JS/Pie%20Chart.html">PieChart</a></li>
+            <li><a href="https://ecenuryildiz.github.io/JS/Hesaplama.html">Hesaplama</a></li>
+            <li><a href="https://ecenuryildiz.github.io/JS/D%C3%B6n%C3%BC%C5%9F%C3%BCm.html">Donusum</a></li>
+            <li><a href="https://ecenuryildiz.github.io/JS/c4_inspector.html">Inspector</a></li>
+            <li><a href="https://ecenuryildiz.github.io/JS/courses.html">Courses</a></li>
+            <li><a href="https://ecenuryildiz.github.io/JS/cw5/EloquentJS.html">Eloquent</a></li>
+	    <li><a href="https://ecenuryildiz.github.io/JS/read.html">Read</a></li>
+	    <li><a href="https://ecenuryildiz.github.io/JS/cw7/CW7--Timing.html">Timing</a></li>
+            <li><a href="https://ecenuryildiz.github.io/JS/CW8.html">Make a Table</a></li>
+	    <li><a href="https://ecenuryildiz.github.io/JS/GitHub%20Users.html">GitHub Users</a></li>
+        </ul>
+      
+	 <hr>	
+    
+        </div>
+</body>
+</html>
