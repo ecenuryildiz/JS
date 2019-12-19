@@ -28,6 +28,7 @@ Homeworks
 
 [HW2](https://ecenuryildiz.github.io/JS/hw3/database.html)
 
+
 Project
 
-https://ecenuryildiz.github.io/JS/Proje.html
+[Memory Card](https://ecenuryildiz.github.io/JS/Proje.html)
