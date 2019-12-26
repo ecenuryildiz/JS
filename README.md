@@ -31,4 +31,4 @@ Homeworks
 
 Project
 
-[Memory Game](https://ecenuryildiz.github.io/JS/Proje.html)
+[Memory Game](https://ecenuryildiz.github.io/JS/memory-game/index.html)
